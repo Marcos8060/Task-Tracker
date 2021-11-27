@@ -1,7 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=MonteCarlo&family=Montserrat:wght@300;400;500&display=swap');
+body{
+    font-family: 'Dancing Script', cursive;
+font-family: 'MonteCarlo', cursive;
+font-family: 'Montserrat', sans-serif;
+}
 .navbar{
     background: #21212B;
+    box-shadow: 2px 2px 2px gray;
+    height: 10vh;
 }
 .form{
     width: 30%;
     margin: auto;
+}
+.sidebar{
+    background: #21212B;
+    height: 90vh;
+    width: 15%;
+    color: white;
+    text-align: center;
+}
+.sidebar ul li{
+    margin: 20px;
+    list-style: none;
+    cursor: pointer;
+    padding-top: 10px;
+}
+.sidebar ul li img{
+    height: 30px;
+    margin-right: 20px;
+}
+.sidebar .photo{
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
 }
