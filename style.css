@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=MonteCarlo&family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=MonteCarlo&family=Montserrat:wght@300;400;500;600&family=Roboto:wght@500&display=swap');
 body{
     font-family: 'Dancing Script', cursive;
 font-family: 'MonteCarlo', cursive;
@@ -12,6 +13,9 @@ font-family: 'Montserrat', sans-serif;
 .form{
     width: 30%;
     margin: auto;
+}
+.parent{
+    display: flex;
 }
 .sidebar{
     background: #21212B;
@@ -35,4 +39,51 @@ font-family: 'Montserrat', sans-serif;
     width: 50px;
     height: 50px;
     margin-top: 20px;
+}
+.body{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'MonteCarlo', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background: #17181F;
+    width: 85%;
+    color: white;
+    padding-top: 30px;
+}
+.body small,h3,p{
+    margin-left: 220px;
+}
+#task{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    background: #21212B;
+    color: white;
+}
+.card{
+    width: 60%;
+    margin: auto;
+}
+.card{
+    background: #21212B;
+}
+.list-group-item{
+    background: #21212B;
+    width: 95%;
+    color: white;
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list input{
+    margin-right: 15px;
+}
+.overview{
+    background: #21212B;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
 }

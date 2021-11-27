@@ -1,41 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-          crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form">
-              <input class="form-control me-2" placeholder="Search">
-            </form>
-          </div>
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form">
+            <input class="form-control me-2" placeholder="Filter here" />
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
     <!-- End of Navbar -->
     <!-- sidebar section -->
-    <div class="sidebar">
-        <img class="photo" src="https://evisakenya.net/images/photo-requirements-and-size-for-passport.jpg" alt="image">
+    <div class="parent">
+      <div class="sidebar">
+        <img
+          class="photo"
+          src="https://evisakenya.net/images/photo-requirements-and-size-for-passport.jpg"
+          alt="image"
+        />
         <h5>Marcos Ochieng</h5>
         <p class="pt-4">Categories</p>
         <ul>
-            <li><img src="https://img.icons8.com/stickers/100/000000/school--v1.png"/>School</li>
-            <li><img src="https://img.icons8.com/office/40/000000/person-male.png"/>Personal</li>
-            <li><img src="https://img.icons8.com/offices/40/000000/family--v2.png"/>Family</li>
+          <li>
+            <img
+              src="https://img.icons8.com/stickers/100/000000/school--v1.png"
+            />School
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/office/40/000000/person-male.png"
+            />Personal
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/offices/40/000000/family--v2.png"
+            />Family
+          </li>
         </ul>
+      </div>
+      <!-- End of sidebar section -->
+      <!-- body section -->
+      <div class="body">
+        <small>Dashboard</small>
+        <h3>Good morning, <br /></h3>
+        <h3>Marcos</h3>
+        <p class="overview">Dear Marcos, add your task here...</p>
+        <form id="form">
+            <input class="form-control" type="text" id="task" placeholder="add task here...">
+        </form>
+        <div class="card">
+          <ul class="list-group list-group-flush">
+              <div class="list">
+                <li class="list-group-item">Learn Angular</li>
+                <input class="form-check-input mr-2" type="checkbox" value="" id="flexCheckDefault">
+              </div>
+              <div class="list">
+                <li class="list-group-item">Learn Python</li>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              </div>
+              <div class="list">
+                <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, beatae.</li>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              </div>
+          </ul>
+        </div>
+      </div>
     </div>
-    <!-- End of sidebar section -->
-    <!-- body section -->
-    
     <!-- End of body section -->
-</body>
+  </body>
 </html>
