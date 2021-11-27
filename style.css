@@ -10,6 +10,10 @@ font-family: 'Montserrat', sans-serif;
     box-shadow: 2px 2px 2px gray;
     height: 10vh;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 .form{
     width: 30%;
     margin: auto;
@@ -54,11 +58,19 @@ font-family: 'Montserrat', sans-serif;
     margin-left: 220px;
 }
 #task{
-    width: 50%;
-    margin: auto;
+    width: 40%;
+    margin-left: 250px;
     margin-bottom: 20px;
     background: #21212B;
     color: white;
+}
+#form{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    margin-top: -20px;
+    margin-left: 4px;
 }
 .card{
     width: 60%;
@@ -82,7 +94,7 @@ font-family: 'Montserrat', sans-serif;
 }
 .overview{
     background: #21212B;
-    width: 250px;
+    width: 300px;
     text-align: center;
     border-radius: 10px;
     height: 30px;
