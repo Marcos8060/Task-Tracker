@@ -100,3 +100,7 @@ a{
     border-radius: 10px;
     height: 30px;
 }
+.alert{
+    width: 50%;
+    text-align: center;
+}
