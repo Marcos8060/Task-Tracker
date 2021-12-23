@@ -5,16 +5,21 @@ const randomId = Math.floor(Math.random() * 100);
 
 form.addEventListener('submit',getTask);
 
+let tasks = [];
 function getTask(e){
     e.preventDefault();
 
     if(taskInput.value){
-        listgroup.innerHTML += `
+        tasks.push({
+            task:listgroup.innerHTML += `
             <div class="list">
                 <li class="list-group-item">${taskInput.value}</li>
-                <img onclick="removeTask(randomId)" src="https://img.icons8.com/material-rounded/25/fa314a/filled-trash.png"/>
+                <img class="close" src="https://img.icons8.com/material-rounded/25/fa314a/filled-trash.png"/>
             </div>
-        `
+        `,
+        id: tasks.length
+        })
+        console.log(tasks);
     }else{
         clearAlert();
         // create element
@@ -37,6 +42,8 @@ function getTask(e){
     setTimeout(()=>{
         clearAlert();
     },2000);
+
+    removeTask();
 }
 
 // clear alert
@@ -47,7 +54,11 @@ function clearAlert(){
     }
 }
 // removeTask function
-function removeTask(id){
-    
+const close = document.querySelectorAll('close');
+for(let i = 0; i < close.length; i++){
+    close[i].addEventListener('click', ()=>{
+        close[i].parentElement.parentElement.style.display = 'none';
+    });
 }
+
 
